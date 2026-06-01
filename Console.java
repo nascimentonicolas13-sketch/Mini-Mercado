@@ -8,7 +8,6 @@ public class Console {
         System.out.println("====================================");
         int esp = (36 - titulo.length()) / 2;
         
-        // Correção para funcionar no Java 8+ sem o .repeat()
         if (esp > 0) {
             System.out.printf("%" + esp + "s%s%n", "", titulo);
         } else {
