@@ -32,7 +32,7 @@ public class CrudProdutos {
         } while (opcao != 0);
     }
 
-    // CREATE - Cadastrar produto
+    // Cadastrar produto
     static void cadastrar(ArrayList<Produto> produtos) {
         System.out.println("\n====================================");
         System.out.println("        CADASTRAR PRODUTO           ");
@@ -57,7 +57,7 @@ public class CrudProdutos {
         pausar();
     }
 
-    // READ - Listar produtos
+    // Listar produtos
     public static void listar(ArrayList<Produto> produtos) {
         System.out.println("\n====================================");
         System.out.println("         LISTA DE PRODUTOS          ");
@@ -75,7 +75,7 @@ public class CrudProdutos {
         pausar();
     }
 
-    // READ - Buscar produto por codigo
+    // Buscar produto por codigo
     static void buscar(ArrayList<Produto> produtos) {
         System.out.println("\n====================================");
         System.out.println("         BUSCAR PRODUTO             ");
@@ -96,7 +96,7 @@ public class CrudProdutos {
         pausar();
     }
 
-    // UPDATE - Alterar produto
+    // Alterar produto
     static void alterar(ArrayList<Produto> produtos) {
         System.out.println("\n====================================");
         System.out.println("         ALTERAR PRODUTO            ");
@@ -131,7 +131,7 @@ public class CrudProdutos {
         pausar();
     }
 
-    // DELETE - Remover produto
+    // Remover produto
     static void remover(ArrayList<Produto> produtos) {
         System.out.println("\n====================================");
         System.out.println("         REMOVER PRODUTO            ");
@@ -159,7 +159,7 @@ public class CrudProdutos {
         pausar();
     }
 
-    // Metodo auxiliar para encontrar produto pelo codigo
+    // Encontrar produto pelo codigo
     public static Produto encontrar(ArrayList<Produto> produtos, int codigo) {
         for (Produto p : produtos) {
             if (p.codigo == codigo) return p;
@@ -167,7 +167,7 @@ public class CrudProdutos {
         return null;
     }
 
-    // Gera o proximo codigo disponivel
+    // Gerar proximo codigo disponivel
     static int proximoCodigo(ArrayList<Produto> produtos) {
         int max = 0;
         for (Produto p : produtos) {
