@@ -32,7 +32,7 @@ public class CrudClientes {
         } while (opcao != 0);
     }
 
-    // CREATE - Cadastrar cliente
+    // Cadastrar cliente
     static void cadastrar(ArrayList<Cliente> clientes) {
         System.out.println("\n====================================");
         System.out.println("        CADASTRAR CLIENTE           ");
@@ -63,7 +63,7 @@ public class CrudClientes {
         pausar();
     }
 
-    // READ - Listar clientes
+    // Listar clientes
     static void listar(ArrayList<Cliente> clientes) {
         System.out.println("\n====================================");
         System.out.println("         LISTA DE CLIENTES          ");
@@ -81,7 +81,7 @@ public class CrudClientes {
         pausar();
     }
 
-    // READ - Buscar cliente por CPF
+    // Buscar cliente por CPF
     static void buscar(ArrayList<Cliente> clientes) {
         System.out.println("\n====================================");
         System.out.println("         BUSCAR CLIENTE             ");
@@ -102,7 +102,7 @@ public class CrudClientes {
         pausar();
     }
 
-    // UPDATE - Alterar cliente
+    // Alterar cliente
     static void alterar(ArrayList<Cliente> clientes) {
         System.out.println("\n====================================");
         System.out.println("         ALTERAR CLIENTE            ");
@@ -136,7 +136,7 @@ public class CrudClientes {
         pausar();
     }
 
-    // DELETE - Remover cliente
+    // Remover cliente
     static void remover(ArrayList<Cliente> clientes) {
         System.out.println("\n====================================");
         System.out.println("         REMOVER CLIENTE            ");
@@ -164,7 +164,7 @@ public class CrudClientes {
         pausar();
     }
 
-    // Metodo auxiliar para encontrar cliente pelo CPF
+    // Encontrar cliente pelo CPF
     public static Cliente encontrar(ArrayList<Cliente> clientes, String cpf) {
         for (Cliente c : clientes) {
             if (c.cpf.equals(cpf)) return c;
