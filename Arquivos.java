@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 public class Arquivos {
 
+    // ── PRODUTOS ────────────────────────────────────────────────
+
     public static void salvarProdutos(ArrayList<Produto> lista) {
         try {
             new File("data").mkdirs();
@@ -41,6 +43,8 @@ public class Arquivos {
         }
         return lista;
     }
+
+    // ── CLIENTES ────────────────────────────────────────────────
 
     public static void salvarClientes(ArrayList<Cliente> lista) {
         try {

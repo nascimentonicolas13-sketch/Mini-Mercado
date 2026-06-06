@@ -4,35 +4,34 @@ Sistema de terminal desenvolvido em Java para gerenciamento de mini mercado.
 
 ## Como Executar
 
-**Pré-requisito:** Ter o JDK instalado (https://adoptium.net)
+**Pre-requisito:** Ter o JDK instalado (https://adoptium.net)
 
-**1. Compilar:**
+**1. Abra o terminal na pasta do projeto**
+
+**2. Compile:**
 ```
 javac *.java
 ```
 
-**2. Executar:**
+**3. Execute:**
 ```
 java Main
 ```
 
-> Execute sempre na pasta raiz do projeto (onde estão os arquivos .java)
+## Estrutura dos Arquivos
 
-## Funcionalidades
-
-- CRUD completo de Produtos
-- CRUD completo de Clientes
-- Realizar Compra com cupom fiscal
-- Controle de Estoque
-- Persistência de dados em arquivos CSV (pasta `data/`)
-
-## Arquivos
-
-| Arquivo | Descrição |
+| Arquivo | Descricao |
 |---|---|
-| Main.java | Sistema principal com todos os menus |
-| Produto.java | Classe Produto |
-| Cliente.java | Classe Cliente |
-| Arquivos.java | Leitura e escrita dos arquivos CSV |
-| data/produtos.csv | Dados dos produtos |
-| data/clientes.csv | Dados dos clientes |
+| Main.java | Menu principal do sistema |
+| Produto.java | Classe Produto (codigo, nome, preco, estoque) |
+| Cliente.java | Classe Cliente (cpf, nome, telefone, email) |
+| CrudProdutos.java | CRUD completo de Produtos |
+| CrudClientes.java | CRUD completo de Clientes |
+| Compra.java | Realizar Compra e Controle de Estoque |
+| Arquivos.java | Salvar e carregar dados em CSV |
+
+## Dados salvos
+
+Os dados ficam na pasta `data/`:
+- `data/produtos.csv`
+- `data/clientes.csv`
