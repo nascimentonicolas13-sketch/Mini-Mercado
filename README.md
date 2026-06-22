@@ -36,8 +36,4 @@ Os dados ficam na pasta `data/`:
 - `data/produtos.csv`
 - `data/clientes.csv`
 
-  ## INTEGRANTES
-  
-Nicolas Sabóia do Nascimento - 8261109227
-Caio Peres Sanchez - 8261113145
-Higor Oliveira Alkmin - 8261116605
+
